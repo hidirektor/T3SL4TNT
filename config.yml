@@ -1,0 +1,27 @@
+Prefix: '&6&lT3SL4TNT &8» '
+
+TNT:
+  Name: "&6Batunun TNT'si"
+  Lore:
+    - 'asdasdasd'
+    - 'asdasdasd'
+
+TNT-2:
+  status: true
+  Name: "&6Utku'nun TNT'si"
+  Lore:
+    - 'asdasdasd'
+    - 'asdasdasd'
+
+Messages:
+  Error:
+    ConsoleError: '&cBu Komutu Sadece Oyuncular Kullanabilir !'
+    PermError: '&cBu Komutu Kullanmak İçin Yetkin Yok !'
+  Success:
+    tntAl: '&aEnvanterine TNT gönderildi !'
+    Reload: '&aEklenti Başarılı Bir Şekilde Yenilendi !'
+  Info:
+    Info1: '&8&l&m-&f&l&m-&8&l&m-&f&l&m-&8&l&m-&f&l&m-&8&l&m[&6 &lT3SL4TNT &8&l&m]&f&l&m-&8&l&m-&f&l&m-&8&l&m-&f&l&m-&8&l&m-'
+    Info2: '&e/tnt ver <Tür> <Oyuncu> <Adet> &aOyuncuya TNT Gönderir.'
+    Info3: '&e/tnt al <Tür> <Adet> &aOyuncuya TNT Gönderir.'
+    Info4: '&e/tnt reload &aEklentiyi Yeniler.'

@@ -31,10 +31,40 @@ public class TNTCommand implements CommandExecutor {
                 } else {
                     sender.sendMessage(MessageUtil.CONSOLEERROR);
                 }
-            } else if(args[0].equalsIgnoreCase("reload") && sender.hasPermission("t3sl4tnt.reload")) {
-                manager.reload("config");
-                MessageUtil.loadMessages();
-                sender.sendMessage(MessageUtil.RELOAD);
+            } else if(args[0].equalsIgnoreCase("al")) {
+                if(sender instanceof Player) {
+                    Player komutGonderen = (Player) sender;
+                    if(komutGonderen.isOp() || komutGonderen.hasPermission("t3sl4tnt.al")) {
+                        //TODO
+                        //al komutu
+                    } else {
+                        komutGonderen.sendMessage(MessageUtil.PERMERROR);
+                    }
+                } else {
+                    sender.sendMessage(MessageUtil.CONSOLEERROR);
+                }
+            } else if(args[0].equalsIgnoreCase("ver")) {
+                if(sender.isOp() || sender.hasPermission("t3sl4tnt.ver") || !(sender instanceof Player)) {
+                    //TODO
+                    //ver komutu
+                } else {
+                    sender.sendMessage(MessageUtil.PERMERROR);
+                }
+            } else if(args[0].equalsIgnoreCase("god")) {
+                if(sender.isOp() || sender.hasPermission("t3sl4tnt.god") || !(sender instanceof Player)) {
+                    //TODO
+                    //god mode
+                } else {
+                    sender.sendMessage(MessageUtil.PERMERROR);
+                }
+            } else if(args[0].equalsIgnoreCase("reload")) {
+                if(sender.isOp() || sender.hasPermission("t3sl4tnt.reload") || !(sender instanceof Player)) {
+                    manager.reload("config");
+                    MessageUtil.loadMessages();
+                    sender.sendMessage(MessageUtil.RELOAD);
+                } else {
+                    sender.sendMessage(MessageUtil.PERMERROR);
+                }
             }
         }
         return true;

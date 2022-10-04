@@ -1,15 +1,12 @@
 Prefix: '&6&lT3SL4TNT &8» '
 
 TNT:
-  Name: "&6Batunun TNT'si"
-  Lore:
+  Advanced-Name: "&6Batunun TNT'si"
+  Advanced-Lore:
     - 'asdasdasd'
-    - 'asdasdasd'
-
-TNT-2:
-  status: true
-  Name: "&6Utku'nun TNT'si"
-  Lore:
+    - 'asdasdasdasd'
+  ExtraAdvanced-Name: "&6Utkunun TNT'si"
+  ExtraAdvanced-Lore:
     - 'asdasdasd'
     - 'asdasdasd'
 
@@ -17,11 +14,26 @@ Messages:
   Error:
     ConsoleError: '&cBu Komutu Sadece Oyuncular Kullanabilir !'
     PermError: '&cBu Komutu Kullanmak İçin Yetkin Yok !'
+    NotOnline: '&e%Player% &cOyunda Değil !'
+    TurError: '&cHatalı TNT Türü Girdiniz !'
+    TurError-0: '&eGüçlü TNT için &c1'
+    TurError-1: '&eEkstra Güçlü TNT için &c2'
+    IntError: '&cLütfen Geçerli Bir Sayı Girin !'
+    InvError: '&cEnvanterinde Boş Yer Yok !'
+    InvErrorGive: '&c%Player% &cAdlı Oyuncunun Envanterinde Yer Yok !'
   Success:
     tntAl: '&aEnvanterine TNT gönderildi !'
     Reload: '&aEklenti Başarılı Bir Şekilde Yenilendi !'
+    Add: '&eEnvanterine &a%adet% &b%advancedTNT% &eEklendi !'
+    Give: '&a%Player% &eAdlı Oyuncunun Envanterine &a%adet% &eTane &a%advancedTNT% &eEklendi !'
+  Usages:
+    alCmd: '&e/tnt al <Tür> <Adet> &aOyuncuya TNT Gönderir.'
+    verCmd: '&e/tnt ver <Tür> <Oyuncu> <Adet> &aOyuncuya TNT Gönderir.'
+    godCmd: '&e/tnt god <Oyuncu> &aOyuncuyu TNT Kafese Kapatır.'
+    reloadCmd: '&e/tnt reload &aEklentiyi Yeniler.'
   Info:
     Info1: '&8&l&m-&f&l&m-&8&l&m-&f&l&m-&8&l&m-&f&l&m-&8&l&m[&6 &lT3SL4TNT &8&l&m]&f&l&m-&8&l&m-&f&l&m-&8&l&m-&f&l&m-&8&l&m-'
-    Info2: '&e/tnt ver <Tür> <Oyuncu> <Adet> &aOyuncuya TNT Gönderir.'
-    Info3: '&e/tnt al <Tür> <Adet> &aOyuncuya TNT Gönderir.'
-    Info4: '&e/tnt reload &aEklentiyi Yeniler.'
+    Info2: '&e/tnt al <Tür> <Adet> &aOyuncuya TNT Gönderir.'
+    Info3: '&e/tnt ver <Tür> <Oyuncu> <Adet> &aOyuncuya TNT Gönderir.'
+    Info4: '&e/tnt god <Oyuncu> &aOyuncuyu TNT Kafese Kapatır.'
+    Info5: '&e/tnt reload &aEklentiyi Yeniler.'

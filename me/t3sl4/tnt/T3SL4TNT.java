@@ -1,18 +1,17 @@
 package me.t3sl4.tnt;
 
 import me.t3sl4.tnt.commands.TNTCommand;
+import me.t3sl4.tnt.util.Item;
 import me.t3sl4.tnt.util.MessageUtil;
 import me.t3sl4.tnt.util.SettingsManager;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.command.CommandExecutor;
-import org.bukkit.plugin.Plugin;
-import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class T3SL4TNT extends JavaPlugin {
 
     static SettingsManager manager = SettingsManager.getInstance();
+    public static Item item = new Item();
     static JavaPlugin p;
 
     public void onEnable() {
@@ -43,6 +42,8 @@ public class T3SL4TNT extends JavaPlugin {
         manager.setup(p);
         MessageUtil.loadMessages();
         loadCommands();
+        loadListeners();
+        item.loadItem(item);
     }
 
     private void loadCommands() {
@@ -50,7 +51,7 @@ public class T3SL4TNT extends JavaPlugin {
     }
 
     private void loadListeners() {
-        //getServer().getPluginManager().registerEvents(new BombListener(), this);
+        //getServer().getPluginManager().registerEvents(new MoveListener(), this);
     }
 
 }
